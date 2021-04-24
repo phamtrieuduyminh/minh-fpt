@@ -1,0 +1,96 @@
+<div class="row  m-lg-auto pl-5 pr-5">
+    <div class="col-4 btn p-2">
+        <div class="dropdown">
+            <button class="btn  dropdown-toggle bg-warning w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         Úng dụng phần mềm
+        </button>
+            <ul class="dropdown-menu dropdown-menu-dark m-2  text-dark " aria-labelledby="dropdownMenuButton2">
+                <li class="btn"><a class="dropdown-item" href="#">SQL Server</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Lập trình java</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Lập trình hướng đối tượng với java</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Quản lý dự án với Agile</a></li>
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-4 btn p-2">
+        <div class="dropdown">
+            <button class="btn  dropdown-toggle bg-info w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         Thiết kế trang wed
+        </button>
+            <ul class="dropdown-menu dropdown-menu-dark m-2  text-dark " aria-labelledby="dropdownMenuButton2">
+                <li class="btn"><a class="dropdown-item" href="#">Điện toán đám mây</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Thiết kế layout</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Lập trình PHP</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Internet Marketing</a></li>
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="col-4 btn p-2">
+        <div class="dropdown">
+            <button class="btn  dropdown-toggle bg-primary w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        Lập trình di động
+        </button>
+            <ul class="dropdown-menu dropdown-menu-dark m-2  text-dark " aria-labelledby="dropdownMenuButton2">
+                <li class="btn"><a class="dropdown-item" href="#">Lập trình adroid cơ bản</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Lập trình android nâng cao</a></li>
+                <li class="btn"><a class="dropdown-item" href="#">Thiết kế dao diện trên Android</a></li>
+
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<hr style="width: 100%; margin-left: auto; margin-right: auto; margin-top: 10px; color: black;">
+
+<div class="row " ng-controller="dmmh">
+
+
+
+
+
+    <div class=" col-6 mt-lg-3 " ng-repeat="mh in monhocs">
+        <a href="#!lambai/{{mh.Id}}">
+            <div class="card ">
+                <div class="card-body m-auto text-xl-center">
+                    <h5 class="card-title"><img src="images/logos/{{mh.Logo}}" alt=""></h5>
+
+                </div>
+
+                <div class="btn card-footer text-dark  text-center">
+                    {{mh.Name}}
+                </div>
+
+            </div>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>

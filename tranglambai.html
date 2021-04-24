@@ -1,0 +1,38 @@
+<div class="row" ng-controller="lambai">
+    <div class="card">
+        <!-- <div class="card-header bg-info">
+            <h5>Mã số sinh viên : ps13756</h5>
+            <h5>Họ và tên : Phạm Triệu Duy Minh</h5>
+        </div> -->
+        <div class="card-body">
+
+
+            <div class="card">
+                <div class="card-header" ng-if="qCurrent?true:faise">
+                    {{qCurrent.Text}}
+
+                </div>
+
+                <div class="card-body" style="min-height: 300px;">
+                    <form action="">
+                        <div class="radio" ng-repeat="ans in qCurrent.Answers">
+                            <label><input type="radio" name="optradio" value="ans.Id" ng-model="traLoi.idTraLoi" >&nbsp;&nbsp;{{ans.Text}}</label>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-footer">
+            <button type="button" class="btn btn-info">Nộp bài</button>
+            <button type="button" class="btn btn-info" ng-click="pre()">Quay lại</button>
+            <button type="button" class="btn btn-info" ng-click="next()">Trang kế</button>
+        </div>
+
+    </div>
+
+
+</div>

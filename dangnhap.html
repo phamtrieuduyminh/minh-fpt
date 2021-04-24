@@ -1,0 +1,76 @@
+<div style=" margin-left: 50px;margin-right: 50px;">
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <article class=" pl-5 mb-5">
+            <div class="col-6 m-auto">
+
+                <div class="card">
+
+                    <div class="card-header text-uppercase font-weight-bold ">
+                        <i class="fas fa-user">
+                                Đăng nhập
+                            </i>
+                    </div>
+                    <div class="card-body ">
+
+
+
+
+                        <form name="frmThemTL">
+                            <div class="form-group">
+                                <label for="">Tài khoản</label>
+                                <input type="text" aria-describedby="fullnamehelpID" name="tentl" ng-model="user.userName" required ng-minlength="0" class="form-control" placeholder="Tin xã hội" aria-describedby="helpId">
+                                <div id="fullnamehelpID" class="badge badge-danger font-intalic" ng-show="frmThemTL.tentl.$invalid">Tài khoản không được để trống</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Mật khẩu</label>
+                                <input aria-describedby="thutu" type="password" name="thutu" ng-model="user.passWord" id="" required ng-min="6" class="form-control" placeholder="Mật khẩu" aria-describedby="helpId">
+                                <div id="thutu" class="badge badge-danger font-intalic" ng-show="frmThemTL.thutu.$invalid">Điền vào mật khẩu</div>
+                            </div>
+
+
+                        </form>
+
+
+                        <div class="row m-2">
+                            <label class="checkbox-inline mr-2 text-danger">{{error}}</label>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="card-footer ">
+                        <button class="btn btn-primary" ng-click="dn()">Xác nhận</button>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </article>
+
+
+    </div>
