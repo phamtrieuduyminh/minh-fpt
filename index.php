@@ -1,3 +1,3 @@
 <?php
 
-require_once("test.html");
+require_once("index.html");
